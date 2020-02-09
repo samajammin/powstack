@@ -1,18 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+
+const H1 = styled.h1`
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  width: 100%;
+`
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Coming soon...</h1>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <H1>Coming soon...</H1>
   </Layout>
 )
 
